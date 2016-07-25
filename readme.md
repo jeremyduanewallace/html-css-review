@@ -19,6 +19,16 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 
 ```html
 <!-- Code goes here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
 ```
 
 2.) What are the differences between these tags?
@@ -34,6 +44,7 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 ```
 Explain here.
 ```
+img tag is a inline element and div is a block element 
 
 ---
 
@@ -59,30 +70,40 @@ Explain here.
 ```
 Explain here
 ```
+inline css is directly applied to a element inline on the html document.
+
+internal css is applied to the html document in the head between script tags.
+
+external css is apllied in a .css file and can be applied to more than one html file.
+
 
 2.) Below are some different CSS selectors. Use CSS comments to describe what each selector will do.
 
 ```css
-/* comment like this */
+/* this will select all div elements on the html page */
 div {
   border-radius: 50%;
 }
 
+/* this will select all p tags nested inside parent element with a .header class*/
 .header p {
   font-size: 18px;
 }
 
+/* will select all .footer classes and apply the css*/
 .footer {
   position: absolute;
   bottom: 0;
 }
 
+/*will select all .splash-image classes and apply the css*/
 .splash-image {
   background-image: url("../images/ocean.jpg");
   background-size: cover;
   width: 100%;
 }
 
+/*this will select all .ninja classes in the hoover state*/
 .ninja:hover {
   display: none;
   color: black;
